@@ -6,7 +6,6 @@
     <title>Login - Reference Check Online</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-
         .responsive-heading {
             font-size: 40px;
             font-weight: 700;
@@ -57,34 +56,19 @@
 <body>
     <div style="padding: 0px !important;height: 100%!important;" class="container-fluid d-flex flex-column flex-lg-row">
         <div class="col-lg-6 left-panel d-flex flex-column" style="justify-content: space-between;padding: 40px;">
-            <!-- <h1>ReferenceCheck.online</h1> -->
-             <div>
+            <div>
                 <img style="width: 167px;" src="LOGO.png"/>
-             </div>
-             <div>
-                <p class="responsive-heading">Simplify reference management with our innovative Reference Check Platform</p>
-
-             </div>
             </div>
+            <div>
+                <p class="responsive-heading">Simplify reference management with our innovative Reference Check Platform</p>
+            </div>
+        </div>
         <div class="col-lg-6 right-panel d-flex flex-column justify-content-center">
             <h2>Sign in to Your Candidate Account</h2>
-            <form>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password *</label>
-                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
-                </div>
-                <div class="form-check mb-4">
-                    <input type="checkbox" class="form-check-input" id="remember">
-                    <label class="form-check-label" for="remember">Remember me</label>
-                    <a class="float-right" href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn btn-info btn-block">Login ⮞</button>
-                <!-- <p class="mt-2"><a href="#">Forgot password?</a></p> -->
-            </form>
+
+            <!-- Azure B2C login form gets injected here -->
+            <div id="api"></div>
+
             <div class="social-login text-center mt-4">
                 <p>-- or --</p>
                 <div class="social-icons">
@@ -93,10 +77,11 @@
                     <i class="fab fa-linkedin"></i>
                 </div>
             </div>
-           <p class="mt-3 text-center">
-  Do not have an account? 
-  <a href="https://yourdomain.com/signup" target="_blank">Sign up</a>
-</p>
+
+            <p class="mt-3 text-center">
+                Do not have an account?
+                <a href="https://your-custom-registration-portal.com">Sign up</a>
+            </p>
         </div>
     </div>
 
