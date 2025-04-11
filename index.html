@@ -52,19 +52,27 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // This hides any element with the class 'create'
+          var signupElements = document.getElementsByClassName("create");
+          for (var i = 0; i < signupElements.length; i++) {
+            signupElements[i].style.display = "none";
+          }
+        });
+      </script>
 </head>
 <body>
     <div style="padding: 0px !important;height: 100%!important;" class="container-fluid d-flex flex-column flex-lg-row">
         <div class="col-lg-6 left-panel d-flex flex-column" style="justify-content: space-between;padding: 40px;">
             <div>
-                <img style="width: 167px;" src="LOGO.png"/>
+                <img style="width: 167px;" src="https://hummamcee.github.io/RefCheck/LOGO.png"/>
             </div>
             <div>
                 <p class="responsive-heading">Simplify reference management with our innovative Reference Check Platform</p>
             </div>
         </div>
         <div class="col-lg-6 right-panel d-flex flex-column justify-content-center">
-            <h2>Sign in to Your Candidate Account</h2>
 
             <!-- Azure B2C login form gets injected here -->
             <div id="api"></div>
